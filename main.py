@@ -37,7 +37,9 @@ def to_idx(labels: list[str], target_names: list[str]) -> list[int]:
 
 if __name__ == '__main__':
     
-    file_prefix = 'test'
+    data_dir = './data/test_2'
+    file_prefix = data_dir + '/test_2'
+    
     file_path = file_prefix + '.json'
     file_wpe_path = file_prefix + '_with_prior_edit.json'
     file_wccd_path = file_prefix + '_with_codeclone_detect.json'
